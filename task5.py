@@ -24,3 +24,17 @@ The  function should
 
 Returns a list of employees working on that day.
 """
+
+shifts = {
+          "Alice": ["Monday", "Wednesday"],
+          "Bob": ["Tuesday", "Thursday"],
+          "Charlie": ["Monday", "Friday"]
+  }
+
+def add_shift(employee, day):
+     for employed in shifts:
+          if employed == employee:
+               if day in shifts[employed]:
+               
+
+add_shift(1, 2)

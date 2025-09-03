@@ -25,3 +25,14 @@ print(convert_temperature(300, "K"))
 print(convert_temperature(100, "F"))  
 # "Invalid scale. Use 'C' for Celsius or 'K' for Kelvin."
 """
+def convert_temperature(value, scale):
+     if scale == "C":
+          K = value + 273.15
+          return K
+     elif scale == "K":
+          C = value - 273.15
+          return C
+     else:
+          return("Invalid scale. Use 'C' for Celsius or 'K' for Kelvin.")    
+
+print(convert_temperature(25, "C"))
